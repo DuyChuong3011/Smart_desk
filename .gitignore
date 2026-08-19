@@ -43,6 +43,6 @@ dataset/train/
 dataset/val/
 
 # Thư mục nháp
-notebooks/.ipynb_checkpoints
+notebooks/
 scratch/
 prompt/
