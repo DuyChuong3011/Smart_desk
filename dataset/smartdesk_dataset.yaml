@@ -1,0 +1,18 @@
+# Tệp cấu hình Dataset cho YOLOv8
+# Cấu trúc bộ dữ liệu nên được chia thành train và val (sẽ làm thủ công bằng thư mục hoặc để roboflow chia)
+
+# Đường dẫn tuyệt đối tới thư mục dataset
+path: C:/Users/Admin/OneDrive/Documents/HOC_BAI/Smart_desk/dataset
+
+train: train/images  # Thư mục chứa ảnh train
+val: val/images      # Thư mục chứa ảnh validation
+
+# Số lượng class (đồ vật)
+nc: 4
+
+# Tên các class (Lưu ý: số thứ tự cực kỳ quan trọng, phải khớp với ID lúc bạn gán nhãn)
+names:
+  0: mouse
+  1: keyboard
+  2: bottle
+  3: airpods

@@ -1,0 +1,48 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# YOLO & AI Models
+models/*.pt
+models/*.onnx
+!models/.gitkeep
+runs/
+
+# Outputs & Snapshots
+outputs/snapshots/*
+!outputs/snapshots/.gitkeep
+outputs/videos/*
+!outputs/videos/.gitkeep
+
+# Database & Logs
+logs/*.db
+logs/*.sqlite3
+logs/*.csv
+logs/*.csv.bak
+!logs/.gitkeep
+
+# Dataset (Tùy chọn)
+dataset/images/
+dataset/train/
+dataset/val/
+
+# Thư mục nháp
+notebooks/.ipynb_checkpoints
+scratch/
+prompt/

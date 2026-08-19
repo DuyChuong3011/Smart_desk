@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Desk Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Smart Desk <span>Monitor</span></h1>
+            <p>Real-time Object Tracking & Analytics</p>
+        </header>
+
+        <main>
+            <section class="events-section">
+                <div class="section-header">
+                    <h2>Recent Events</h2>
+                    <div class="pulse-indicator">
+                        <span class="pulse"></span> Live
+                    </div>
+                </div>
+                <div class="events-container" id="events-list">
+                    <!-- Events will be populated here -->
+                </div>
+            </section>
+
+            <section class="snapshot-section">
+                <h2>Event Snapshot</h2>
+                <div class="snapshot-container">
+                    <img id="latest-snapshot" src="" alt="Waiting for events..." />
+                    <div class="snapshot-overlay">
+                        <span id="snapshot-time">No events yet</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/static/main.js"></script>
+</body>
+</html>

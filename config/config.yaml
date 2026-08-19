@@ -1,0 +1,35 @@
+camera:
+  index: 0
+  width: 1280
+  height: 720
+  fps: 30
+
+detection:
+  confidence: 0.3
+  model_path: "models/best.onnx"
+  imgsz: 320
+  skip_frames: 15
+  target_classes:
+    - "mouse"
+    - "keyboard"
+    - "bottle"
+    - "airpods"
+
+tracking:
+  max_missed_frames: 15
+  move_distance_threshold: 50 # Pixel distance to trigger MOVED event
+
+desk:
+  roi:
+    x1: 100
+    y1: 100
+    x2: 1100
+    y2: 650
+
+outputs:
+  snapshot_dir: "outputs/snapshots"
+
+mqtt:
+  broker: "127.0.0.1" # Dùng broker chạy nội bộ (Mosquitto)
+  port: 1883
+  topic: "smartdesk/events"
