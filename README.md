@@ -40,7 +40,7 @@ Hệ thống cũng đi kèm với một bộ công cụ **Học liên tục (Con
 
 ```mermaid
 flowchart TD
-    subgraph Thiết bị Xử lý (PC/Laptop)
+    subgraph PC ["Thiết bị Xử lý (PC/Laptop)"]
         Cam[Webcam] --> OD[YOLOv8 ONNX Detector]
         OD --> ROI[Lọc vùng Desk ROI]
         ROI --> SM[Quản lý Trạng thái & Chống nhiễu]
@@ -53,7 +53,7 @@ flowchart TD
         FileSys -.-> Flask
     end
 
-    subgraph Mạng IoT
+    subgraph IOT ["Mạng IoT"]
         EM -- Publish --> MQTT[Mosquitto Broker]
         MQTT -- Subscribe --> ESP[ESP32 / YOLO:bit]
         ESP --> LED[Đèn LED NeoPixel]
