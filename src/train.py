@@ -14,7 +14,7 @@ def main():
         return
         
     print("========================================")
-    print("🚀 BẮT ĐẦU HUẤN LUYỆN (TRAINING)")
+    print(" BẮT ĐẦU HUẤN LUYỆN (TRAINING)")
     print("========================================")
     
     # Bắt đầu huấn luyện
@@ -41,7 +41,7 @@ def main():
         mixup=0.2,        # Trộn 2 ảnh đè lên nhau (giúp chống nhiễu)
     )
     
-    print("\n✅ HUẤN LUYỆN HOÀN TẤT!")
+    print("\n HUẤN LUYỆN HOÀN TẤT!")
     print(f"Mô hình tốt nhất (best.pt) đã được lưu tại: runs/detect/smartdesk_custom/weights/best.pt")
     print("Hãy vào config.yaml và đổi dòng 'model_path: yolov8n.pt' thành đường dẫn tới best.pt!")
 

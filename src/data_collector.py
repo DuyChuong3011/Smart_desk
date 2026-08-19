@@ -27,7 +27,7 @@ def main():
         return
 
     print("=========================================")
-    print("🎥 TRÌNH THU THẬP DỮ LIỆU (DATA COLLECTOR)")
+    print("TRÌNH THU THẬP DỮ LIỆU (DATA COLLECTOR)")
     print("=========================================")
     print("- Đặt AirPods hoặc các đồ vật lên bàn.")
     print("- Nhấn phím 'S' để lưu một bức ảnh.")
@@ -58,7 +58,7 @@ def main():
             filename = f"img_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{count}.jpg"
             filepath = os.path.join(dataset_dir, filename)
             cv2.imwrite(filepath, frame)
-            print(f"📸 Đã lưu: {filename}")
+            print(f" Đã lưu: {filename}")
             count += 1
             
             # Hiệu ứng nháy màn hình (phản hồi thị giác)
@@ -69,7 +69,7 @@ def main():
 
     cap.release()
     cv2.destroyAllWindows()
-    print(f"\n✅ Thu thập hoàn tất! Tổng cộng {count} ảnh.")
+    print(f"\nThu thập hoàn tất! Tổng cộng {count} ảnh.")
 
 if __name__ == "__main__":
     main()

@@ -71,7 +71,7 @@ def main():
         shutil.move(os.path.join(source_dir, txt), os.path.join(val_lbl_dir, txt))
         
     print("========================================")
-    print("✅ ĐÃ CHIA DATASET XONG!")
+    print(" ĐÃ CHIA DATASET XONG!")
     print("========================================")
 
 if __name__ == "__main__":
